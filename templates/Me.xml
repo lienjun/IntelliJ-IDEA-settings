@@ -23,7 +23,7 @@
       <option name="JAVA_COMMENT" value="true" />
     </context>
   </template>
-  <template name="addsign" value="@author $author$&#10;* @date $date$" toReformat="false" toShortenFQNames="true">
+  <template name="addsign" value="@author $author$&#10;* @date $date$" description="" toReformat="false" toShortenFQNames="true">
     <variable name="author" expression="user()" defaultValue="" alwaysStopAt="false" />
     <variable name="date" expression="date(&quot;yyyy-MM-dd HH:mm&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
