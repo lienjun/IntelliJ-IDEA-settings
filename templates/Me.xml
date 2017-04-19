@@ -1,0 +1,39 @@
+<templateSet group="Me">
+  <template name="@author" value="@author $author$" description="author name" toReformat="false" toShortenFQNames="true">
+    <variable name="author" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="@date" value="@date $date$" description="created date time" toReformat="false" toShortenFQNames="true">
+    <variable name="date" expression="date(&quot;yyyy-MM-dd HH:mm&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="sysout" value="System.out.println($word_selection$);" description="print to standard out" toReformat="false" toShortenFQNames="true">
+    <variable name="word_selection" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cdt" value="$dateTime$" description="Current Date time." toReformat="false" toShortenFQNames="true">
+    <variable name="dateTime" expression="date(&quot;yyyy-MM-dd HH:mm&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="addsign" value="@author $author$&#10;* @date $date$" description="add author sign" toReformat="false" toShortenFQNames="true">
+    <variable name="author" expression="user()" defaultValue="" alwaysStopAt="false" />
+    <variable name="date" expression="date(&quot;yyyy-MM-dd HH:mm&quot;)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="logger" value="private static final Logger logger = LoggerFactory.getLogger($className$.class);" description="slf4j logger" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
