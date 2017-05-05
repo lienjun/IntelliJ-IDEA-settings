@@ -4,17 +4,17 @@
     <property name="created">2017-03-26T14:47:05</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2017.1.0.0</property>
-    <property name="modified">2017-05-05T10:43:28</property>
+    <property name="modified">2017-05-05T11:10:50</property>
     <property name="originalScheme">Default copy</property>
   </metaInfo>
-  <console-font>
+  <font>
     <option name="EDITOR_FONT_NAME" value="Consolas" />
     <option name="EDITOR_FONT_SIZE" value="14" />
-  </console-font>
-  <console-font>
+  </font>
+  <font>
     <option name="EDITOR_FONT_NAME" value="Microsoft YaHei UI" />
     <option name="EDITOR_FONT_SIZE" value="14" />
-  </console-font>
+  </font>
   <attributes>
     <option name="CUSTOM_LINE_COMMENT_ATTRIBUTES">
       <value>
