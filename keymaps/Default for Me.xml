@@ -20,9 +20,6 @@
   <action id="InclusiveTranslateAction">
     <keyboard-shortcut first-keystroke="alt numpad2" />
   </action>
-  <action id="ShowTranslationDialogAction">
-    <keyboard-shortcut first-keystroke="alt numpad0" />
-  </action>
   <action id="osmedile.intellij.stringmanip.PopupChoiceAction">
     <keyboard-shortcut first-keystroke="alt m" />
   </action>
