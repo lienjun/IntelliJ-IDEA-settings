@@ -1,1 +1,6 @@
-<code_scheme name="Default" />
+<code_scheme name="Default">
+  <SqlCodeStyleSettings>
+    <option name="ALIGN_AS_IN_SELECT_STATEMENT" value="false" />
+    <option name="NEW_LINE_BEFORE_QUERY_INSIDE_PARENTHESIS" value="true" />
+  </SqlCodeStyleSettings>
+</code_scheme>
