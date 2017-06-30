@@ -1,6 +1,6 @@
 <application>
   <component name="TranslationSettings">
-    <option name="disableApiKeyNotification" value="true" />
+    <option name="disableAppKeyNotification" value="true" />
     <option name="overrideFont" value="true" />
     <option name="phoneticFontFamily" value="DejaVu Sans Mono" />
     <option name="primaryFontFamily" value="Microsoft YaHei UI" />
