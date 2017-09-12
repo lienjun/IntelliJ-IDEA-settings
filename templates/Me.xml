@@ -51,4 +51,29 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="bean" value="&lt;bean id=&quot;$id$&quot; class=&quot;$REF$&quot; /&gt;" description="快速生成Spring Bean配置" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="decapitalize(groovyScript(&quot;_1.tokenize('.')[-1]&quot;, clipboard()))" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="printcontext" value="$vars$.$TYPE$(&quot;$MSG$ &quot; + $params$);&#10;" description="Print Current Context Parameters." toReformat="false" toShortenFQNames="true">
+    <variable name="vars" expression="enum(&quot;logger&quot;, &quot;LOGGER&quot;)" defaultValue="logger" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;debug&quot;, &quot;error&quot;, &quot;info&quot;, &quot;warn&quot;)" defaultValue="debug" alwaysStopAt="true" />
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="groovyScript(&quot;'\&quot;' + _1.collect { it + ' = [\&quot; + ' + it + ' + \&quot;]'}.join(', ') + '\&quot;'&quot;, methodParameters())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
+  <template name="outcontext" value="System.out.println(&quot;$MSG$ &quot; + $params$);" description="Print Current Context Parameters." toReformat="false" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="groovyScript(&quot;'\&quot;' + _1.collect { it + ' = [\&quot; + ' + it + ' + \&quot;]'}.join(', ') + '\&quot;'&quot;, methodParameters())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+    </context>
+  </template>
 </templateSet>
