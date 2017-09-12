@@ -1,0 +1,14 @@
+<templateSet group="iterations">
+  <template name="itco" value="for($ITER_TYPE$ $ITER$ = $COLLECTION$.iterator(); $ITER$.hasNext(); ) {&#10;  $ELEMENT_TYPE$ $VAR$ =$CAST$ $ITER$.next();&#10;  $END$&#10;}" description="Iterate elements of java.util.Collection" toReformat="true" toShortenFQNames="true">
+    <variable name="ITER" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLLECTION" expression="variableOfType(&quot;java.util.Collection&quot;)" defaultValue="&quot;collection&quot;" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="guessElementType(COLLECTION)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITER_TYPE" expression="rightSideType()" defaultValue="&quot;java.util.Iterator&quot;" alwaysStopAt="false" />
+    <variable name="CAST" expression="castToLeftSideType()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>
