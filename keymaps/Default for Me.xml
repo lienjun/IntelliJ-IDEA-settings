@@ -1,4 +1,5 @@
 <keymap version="1" name="Default for Me" parent="$default">
+  <action id="AliP3CInspectionAction" />
   <action id="CodeCompletion">
     <keyboard-shortcut first-keystroke="alt slash" />
   </action>
