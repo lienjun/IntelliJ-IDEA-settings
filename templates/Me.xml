@@ -76,4 +76,9 @@
       <option name="JAVA_COMMENT" value="false" />
     </context>
   </template>
+  <template name="proc like join" value="''%' + $SELECTION$ + '%''" description="存储过程加单引号" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
 </templateSet>
