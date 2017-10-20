@@ -1,11 +1,12 @@
 <application>
   <component name="TranslationSettings">
-    <option name="appId" value="" />
+    <option name="appId" value="7b5eb66d379d10e3" />
     <option name="disableAppKeyNotification" value="true" />
     <option name="langFrom" value="AUTO" />
     <option name="langTo" value="AUTO" />
     <option name="overrideFont" value="true" />
     <option name="phoneticFontFamily" value="DejaVu Sans Mono" />
     <option name="primaryFontFamily" value="Microsoft YaHei UI" />
+    <option name="privateKeyConfigured" value="true" />
   </component>
 </application>
