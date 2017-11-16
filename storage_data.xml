@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="decrements" />
       <item value="list Not Sign Bill Details" />
       <item value="Details" />
       <item value="salary" />
